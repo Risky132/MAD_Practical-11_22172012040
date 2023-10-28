@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginHorizontal="10dp"
+                app:icon="@drawable/baseline_person_24"
+                app:iconSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Shivam"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintHorizontal_bias="0.150"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="+917046526862"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintHorizontal_bias="0.177"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="shivampatel@gmail.com"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintHorizontal_bias="0.31"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                app:icon="@drawable/baseline_location_on_24"
+                app:iconSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="10dp"
+                app:icon="@android:drawable/ic_menu_delete"
+
+                app:iconSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/addr"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="valsad"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toBottomOf="@+id/mobile" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
